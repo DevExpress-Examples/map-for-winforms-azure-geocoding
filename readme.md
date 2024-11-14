@@ -12,7 +12,7 @@ This example demonstrates how to obtain information about a geographical point f
 
 > **NOTE:** You need a [key](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app#get-the-subscription-key-for-your-account) to use Azure Maps services in your application.
 
-`TextEdit` elements specify a geographical point (GeoPoint.Longitude and GeoPoint.Latitude). The “Request Location Information” button initiates the geocoding request. It obtains the point information and passes it to the [RequestLocationInformation](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.AzureGeocodeDataProvider.RequestLocationInformation.overloads?v=24.2) method.
+`TextEdit` elements specify a geographical point (GeoPoint.Longitude and GeoPoint.Latitude). The “Search for Location” button initiates the geocoding request. It obtains the point information and passes it to the [RequestLocationInformation](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.AzureGeocodeDataProvider.RequestLocationInformation.overloads?v=24.2) method.
 
 Results contain an address (LocationInformation.Address) and exact coordinates (LocationInformation.Location), shown in the `MemoEdit` element.
 
