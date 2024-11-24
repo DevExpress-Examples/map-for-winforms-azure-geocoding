@@ -24,7 +24,7 @@ Output:
 
 ## Files to Look At
 
-* [Form1.cs](./CS/AzureGeocoding//Form1.cs) (VB: [Form1.vb](./VB/AzureGeocoding/Form1.vb))
+* [Form1.cs](./CS/AzureGeocoding//Form1.cs) 
 
 ## Documentation
 
