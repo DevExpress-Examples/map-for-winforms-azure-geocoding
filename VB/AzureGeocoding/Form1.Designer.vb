@@ -57,9 +57,9 @@ Namespace AzureGeocoding
             ' 
             Me.mapControl1.Layers.Add(Me.imageLayer)
             Me.mapControl1.Layers.Add(Me.informationLayer)
-            Me.mapControl1.Location = New Point(3, 1)
+            Me.mapControl1.Location = New Drawing.Point(3, 1)
             Me.mapControl1.Name = "mapControl1"
-            Me.mapControl1.Size = New Size(545, 448)
+            Me.mapControl1.Size = New Drawing.Size(545, 448)
             Me.mapControl1.TabIndex = 0
             Me.imageLayer.DataProvider = Me.azureMapDataProvider1
             Me.informationLayer.DataProvider = Me.azureGeocodeDataProvider1
@@ -71,44 +71,44 @@ Namespace AzureGeocoding
             Me.layoutControl1.Controls.Add(Me.simpleButton1)
             Me.layoutControl1.Controls.Add(Me.textEdit2)
             Me.layoutControl1.Controls.Add(Me.textEdit1)
-            Me.layoutControl1.Location = New Point(563, 12)
+            Me.layoutControl1.Location = New Drawing.Point(563, 12)
             Me.layoutControl1.Name = "layoutControl1"
-            Me.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New Rectangle(1075, 0, 812, 500)
+            Me.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New Drawing.Rectangle(1075, 0, 812, 500)
             Me.layoutControl1.Root = Me.Root
-            Me.layoutControl1.Size = New Size(225, 430)
+            Me.layoutControl1.Size = New Drawing.Size(225, 430)
             Me.layoutControl1.TabIndex = 1
             Me.layoutControl1.Text = "layoutControl1"
             ' 
             ' memoEdit1
             ' 
-            Me.memoEdit1.Location = New Point(12, 95)
+            Me.memoEdit1.Location = New Drawing.Point(12, 95)
             Me.memoEdit1.Name = "memoEdit1"
-            Me.memoEdit1.Size = New Size(201, 323)
+            Me.memoEdit1.Size = New Drawing.Size(201, 323)
             Me.memoEdit1.StyleController = Me.layoutControl1
             Me.memoEdit1.TabIndex = 7
             ' 
             ' simpleButton1
             ' 
-            Me.simpleButton1.Location = New Point(12, 64)
+            Me.simpleButton1.Location = New Drawing.Point(12, 64)
             Me.simpleButton1.Name = "simpleButton1"
-            Me.simpleButton1.Size = New Size(201, 27)
+            Me.simpleButton1.Size = New Drawing.Size(201, 27)
             Me.simpleButton1.StyleController = Me.layoutControl1
             Me.simpleButton1.TabIndex = 6
             Me.simpleButton1.Text = "Search for Location"
             ' 
             ' textEdit2
             ' 
-            Me.textEdit2.Location = New Point(84, 38)
+            Me.textEdit2.Location = New Drawing.Point(84, 38)
             Me.textEdit2.Name = "textEdit2"
-            Me.textEdit2.Size = New Size(129, 22)
+            Me.textEdit2.Size = New Drawing.Size(129, 22)
             Me.textEdit2.StyleController = Me.layoutControl1
             Me.textEdit2.TabIndex = 5
             ' 
             ' textEdit1
             ' 
-            Me.textEdit1.Location = New Point(84, 12)
+            Me.textEdit1.Location = New Drawing.Point(84, 12)
             Me.textEdit1.Name = "textEdit1"
-            Me.textEdit1.Size = New Size(129, 22)
+            Me.textEdit1.Size = New Drawing.Size(129, 22)
             Me.textEdit1.StyleController = Me.layoutControl1
             Me.textEdit1.TabIndex = 4
             ' 
@@ -118,55 +118,55 @@ Namespace AzureGeocoding
             Me.Root.GroupBordersVisible = False
             Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem1, Me.layoutControlItem2, Me.layoutControlItem3, Me.layoutControlItem4})
             Me.Root.Name = "Root"
-            Me.Root.Size = New Size(225, 430)
+            Me.Root.Size = New Drawing.Size(225, 430)
             Me.Root.TextVisible = False
             ' 
             ' layoutControlItem1
             ' 
             Me.layoutControlItem1.Control = Me.textEdit1
-            Me.layoutControlItem1.Location = New Point(0, 0)
+            Me.layoutControlItem1.Location = New Drawing.Point(0, 0)
             Me.layoutControlItem1.Name = "layoutControlItem1"
-            Me.layoutControlItem1.Size = New Size(205, 26)
+            Me.layoutControlItem1.Size = New Drawing.Size(205, 26)
             Me.layoutControlItem1.Text = "Latitude:"
-            Me.layoutControlItem1.TextSize = New Size(60, 16)
+            Me.layoutControlItem1.TextSize = New Drawing.Size(60, 16)
             ' 
             ' layoutControlItem2
             ' 
             Me.layoutControlItem2.Control = Me.textEdit2
-            Me.layoutControlItem2.Location = New Point(0, 26)
+            Me.layoutControlItem2.Location = New Drawing.Point(0, 26)
             Me.layoutControlItem2.Name = "layoutControlItem2"
-            Me.layoutControlItem2.Size = New Size(205, 26)
+            Me.layoutControlItem2.Size = New Drawing.Size(205, 26)
             Me.layoutControlItem2.Text = "Longitude:"
-            Me.layoutControlItem2.TextSize = New Size(60, 16)
+            Me.layoutControlItem2.TextSize = New Drawing.Size(60, 16)
             ' 
             ' layoutControlItem3
             ' 
             Me.layoutControlItem3.Control = Me.simpleButton1
-            Me.layoutControlItem3.Location = New Point(0, 52)
+            Me.layoutControlItem3.Location = New Drawing.Point(0, 52)
             Me.layoutControlItem3.Name = "layoutControlItem3"
-            Me.layoutControlItem3.Size = New Size(205, 31)
-            Me.layoutControlItem3.TextSize = New Size(0, 0)
+            Me.layoutControlItem3.Size = New Drawing.Size(205, 31)
+            Me.layoutControlItem3.TextSize = New Drawing.Size(0, 0)
             Me.layoutControlItem3.TextVisible = False
             ' 
             ' layoutControlItem4
             ' 
             Me.layoutControlItem4.Control = Me.memoEdit1
-            Me.layoutControlItem4.Location = New Point(0, 83)
+            Me.layoutControlItem4.Location = New Drawing.Point(0, 83)
             Me.layoutControlItem4.Name = "layoutControlItem4"
-            Me.layoutControlItem4.Size = New Size(205, 327)
-            Me.layoutControlItem4.TextSize = New Size(0, 0)
+            Me.layoutControlItem4.Size = New Drawing.Size(205, 327)
+            Me.layoutControlItem4.TextSize = New Drawing.Size(0, 0)
             Me.layoutControlItem4.TextVisible = False
             ' 
             ' Form1
             ' 
-            AutoScaleDimensions = New SizeF(8F, 20F)
+            AutoScaleDimensions = New Drawing.SizeF(8.0F, 20.0F)
             AutoScaleMode = AutoScaleMode.Font
-            ClientSize = New Size(800, 450)
+            ClientSize = New Drawing.Size(800, 450)
             Controls.Add(Me.layoutControl1)
             Controls.Add(Me.mapControl1)
             Name = "Form1"
             Text = "Form1"
-            Load += AddressOf Form1_Load
+            AddHandler Load, AddressOf Form1_Load
             CType(Me.mapControl1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.layoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.layoutControl1.ResumeLayout(False)

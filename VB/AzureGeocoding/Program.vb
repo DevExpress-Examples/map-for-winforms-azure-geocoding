@@ -1,3 +1,4 @@
+Imports System.Windows.Forms
 Namespace AzureGeocoding
 
     Friend Module Program
@@ -9,8 +10,9 @@ Namespace AzureGeocoding
         Sub Main()
             ' To customize application configuration such as set high DPI settings or default font,
             ' see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize()
-            Application.Run(New Form1())
+            Call Application.EnableVisualStyles()
+            Application.SetCompatibleTextRenderingDefault(False)
+            Call Application.Run(New Form1())
         End Sub
     End Module
 End Namespace

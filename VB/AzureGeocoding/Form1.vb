@@ -1,6 +1,7 @@
 Imports DevExpress.XtraMap
 Imports System.Text
 Imports System.Runtime.InteropServices
+Imports System.Windows.Forms
 
 Namespace AzureGeocoding
 
@@ -35,9 +36,9 @@ Namespace AzureGeocoding
             imageProvider = New AzureMapDataProvider With {.AzureKey = key}
             ' Create a geocode data provider.
             geocodeProvider = New AzureGeocodeDataProvider With {.AzureKey = key, .MaxVisibleResultCount = 1}
-            Me.geocodeProvider.LocationInformationReceived += AddressOf OnLocationInformationReceived
-            Me.geocodeProvider.LayerItemsGenerating += AddressOf OnLayerItemsGenerating
-            Me.simpleButton1.Click += AddressOf requestLocation_Click
+            AddHandler Me.geocodeProvider.LocationInformationReceived, AddressOf OnLocationInformationReceived
+            AddHandler Me.geocodeProvider.LayerItemsGenerating, AddressOf OnLayerItemsGenerating
+            AddHandler Me.simpleButton1.Click, AddressOf requestLocation_Click
             informationLayer.DataProvider = geocodeProvider
             imageLayer.DataProvider = imageProvider
         End Sub
@@ -74,8 +75,8 @@ Namespace AzureGeocoding
         End Function
 
         Private Sub OnLocationInformationReceived(ByVal sender As Object, ByVal e As LocationInformationReceivedEventArgs)
-            If e.Cancelled Is True Then Return
-            If e.Result.ResultCode IsNot RequestResultCode.Success Then
+            If (e.Cancelled) Then Return
+            If (e.Result.ResultCode <> RequestResultCode.Success) Then
                 memoEdit1.Text = "The Bing Geocode service does not work for this location."
                 Return
             End If
