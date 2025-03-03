@@ -77,7 +77,7 @@ Namespace AzureGeocoding
         Private Sub OnLocationInformationReceived(ByVal sender As Object, ByVal e As LocationInformationReceivedEventArgs)
             If (e.Cancelled) Then Return
             If (e.Result.ResultCode <> RequestResultCode.Success) Then
-                memoEdit1.Text = "The Bing Geocode service does not work for this location."
+                memoEdit1.Text = "The Azure Geocode service does not work for this location."
                 Return
             End If
 
