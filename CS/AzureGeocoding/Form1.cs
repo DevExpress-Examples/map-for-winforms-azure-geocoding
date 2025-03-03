@@ -71,7 +71,7 @@ namespace AzureGeocoding {
         private void OnLocationInformationReceived(object sender, LocationInformationReceivedEventArgs e) {
             if (e.Cancelled == true) return;
             if (e.Result.ResultCode != RequestResultCode.Success) {
-                memoEdit1.Text = "The Bing Geocode service does not work for this location.";
+                memoEdit1.Text = "The Azure Geocode service does not work for this location.";
                 return;
             }
             StringBuilder resultList = new StringBuilder("");
